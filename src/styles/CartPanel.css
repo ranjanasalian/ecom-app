@@ -1,0 +1,40 @@
+.cart-panel {
+  position: fixed; /* Fix it on the side */
+  right: 0; 
+  width: 300px; /* Width of the cart panel */
+  height: 100vh; /* Full height */
+  background-color: black; /* Background color */
+  transition: right 1s ease; /* Animate the sliding effect */
+  color: white;
+}
+
+/* When the cart is open */
+.cart-panel.open {
+  right: 0; 
+  transition: right 1s ease;
+
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  color: white;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.cart-actions {
+  margin-top: 20px;
+}
+
+.cart-actions button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}

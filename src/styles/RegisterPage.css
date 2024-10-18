@@ -1,0 +1,140 @@
+.signup-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/src/assets/images/leaf.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .signup-container {
+    display: flex;
+    background-color: #025048;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 1000px;
+    height: 600px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .losignupgin-image {
+    flex: 1;
+    position: relative;
+  }
+  
+  .signup-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    background-color: #ffffff44;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .signup-form-container {
+    flex: 1;
+    padding: 40px;
+    color: white;
+    background-color: #025048;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .signup-input-group {
+    margin-bottom: 20px;
+  }
+  
+  .signup-input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .signup-input-group i {
+    margin-right: 8px;
+  }
+  
+  .signup-input-value {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #025048;
+  }
+  
+  input:focus {
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4cb79a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 5px;
+    
+  }
+  
+  .signup-button:hover {
+    background-color: #3d8f79;
+  }
+  .alreadysignup{
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .error-message {
+    color: white;
+    margin-top: 7px;
+  }
+
+  .forgotpassword{
+    color: #ffffff;
+  }
+
+  .forgotpassword:hover{
+    color: #3d8f79;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    
+  }
+  
+  a:hover {
+    text-decoration:none;
+    color: #3d8f79;
+  
+  }
+  

@@ -1,0 +1,83 @@
+.header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #025048;
+    z-index: 1000;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: visible;
+}
+
+.logo-name{
+    color: white;
+    margin-left: 40px;
+}
+
+.navbar{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;  
+}
+.nav-items{
+    list-style-type: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+.nav-control{
+    color: white;
+    text-decoration: none;
+}
+.nav-control:active{
+    color: black;
+}
+
+.right-containers{
+    overflow: visible;
+    display: flex;
+}
+.cart{
+    font-size: 23px;
+    color: white;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+
+.login-signupbtn{
+    margin-right: 40px;
+    border: 1px solid #4A8380;
+    padding: 10px;
+    background-color: transparent;
+    color: #4A8380;
+    cursor: pointer;
+}
+
+.login-signupbtn:hover{
+    background-color: whitesmoke;
+    color: #025048;
+    transition: 0.5s ease;
+}
