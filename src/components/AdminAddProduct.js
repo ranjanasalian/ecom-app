@@ -56,7 +56,7 @@ export default function AdminAddProduct() {
   return (
     <div className="admin-add-product">
       <h2>Add New Product</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="admin-main-form">
         <div className="form-section">
           <h3>General Information</h3>
           <label>
@@ -175,13 +175,16 @@ export default function AdminAddProduct() {
           <input type="file" onChange={handleImageUpload} required />
           {product.image && (
             <img
+              className="product-image"
               src={product.image}
               alt="Product Preview"
               style={{ width: "100px" }}
             />
           )}
         </div>
-        <button type="submit">Add Product</button>
+        <button className="btn" type="submit">
+          Add Product
+        </button>
       </form>
     </div>
   );
