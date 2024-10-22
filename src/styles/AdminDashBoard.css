@@ -1,4 +1,4 @@
-.admin-dashboard {
+/* .admin-dashboard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,5 +10,87 @@
     font-size: 3rem;
     color: #333;
     font-weight: bold;
+  } */
+
+  .admin-dashboard {
+    margin: 1px;
+    min-height: 100vh; /* Prevent collapse */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .product-table {
+    width: 100%;
+    max-width: 1300px; /* Set a max width for better appearance */
+    flex-grow: 1; /* Allow this section to grow */
+    overflow-y: auto; /* Allow vertical scrolling */
+    border: 1px solid #e5e5e5; /* Optional: to visually separate the table */
+    border-radius: 4px; /* Optional: for rounded corners */
+    margin-top: 10px; /* Space above the product table */
+  }
+  
+  .product-header,
+  .product-row {
+    display: grid; /* Use grid for alignment */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr 1fr 0.5fr 1fr; /* Align columns */
+    align-items: center; /* Align items to the center */
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .product-header {
+    font-weight: bold;
+    background-color: #f9f9f9;
+    font-size: 13px;
+    padding: 5px 0 0 0;
+  }
+  
+  .product-row {
+    background-color: #fff;
+    font-size: 11px;
+    padding: 1px 0 1px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .product-row:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .product-row img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .product-row span,
+  .product-header span {
+    padding: 10px;
+    text-align: left; /* Left align text for consistency */
+    
+  }
+  
+  .product-description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .product-row .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .product-row .actions button:hover {
+    color: red;
+  }
+  
+  .actions button:nth-child(1):hover {
+    color: blue;
   }
   

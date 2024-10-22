@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/AdminAddProduct.css";
+import { useNavigate } from "react-router-dom";
 
 export default function AdminAddProduct() {
   const [product, setProduct] = useState({
@@ -14,6 +15,8 @@ export default function AdminAddProduct() {
     category: "",
     image: "",
   });
+
+  const navigate = useNavigate();
 
   function handleInputChange(event) {
     const { name, value, type, checked } = event.target;
@@ -34,7 +37,8 @@ export default function AdminAddProduct() {
   }
 
   function handleImageUpload(event) {
-    const file = event.target.file[0];
+    const file = event.target.files[0];
+
     const reader = new FileReader();
     reader.onloadend = () => {
       setProduct({
@@ -52,6 +56,7 @@ export default function AdminAddProduct() {
       "products",
       JSON.stringify([...existingProducts, product])
     );
+    navigate("/admin/");
   }
   return (
     <div className="admin-add-product">
@@ -80,7 +85,7 @@ export default function AdminAddProduct() {
           </label>
           <label>Size:</label>
           <div className="size-options">
-            {["XS", "S", "M", "XL", "XXL"].map((size) => (
+            {["XS", "S", "M", "L", "XL", "XXL"].map((size) => (
               <label key={size}>
                 <input
                   type="checkbox"

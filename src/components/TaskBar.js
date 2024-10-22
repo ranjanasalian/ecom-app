@@ -20,7 +20,7 @@ export default function TaskBar() {
       </div>
       <ul className="menu-list">
         <li className="menu-item">
-          <i className="icon dashboard-icon">
+          <i className="dashboard-icon">
             <MdDashboard />
           </i>
           {isExpanded && (
@@ -30,13 +30,13 @@ export default function TaskBar() {
           )}
         </li>
         <li className="menu-item">
-          <i className="icon user-icon">
+          <i className="user-icon">
             <FaUsers />
           </i>
           {isExpanded && <span>User Accounts</span>}
         </li>
         <li className="menu-item">
-          <i className="icon product-icon">
+          <i className="product-icon">
             <MdAddToPhotos />
           </i>
           {isExpanded && (
@@ -46,12 +46,6 @@ export default function TaskBar() {
           )}
         </li>
       </ul>
-      {isExpanded && (
-        <div className="sidebar-footer">
-          <img src="profile-image-url" alt="Profile" className="profile-img" />
-          <span>Profile Name</span>
-        </div>
-      )}
     </div>
   );
 }

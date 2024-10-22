@@ -25,7 +25,7 @@ export default function LoginPage() {
       if (email === "admin@gmail.com" && password === "admin0987") {
         navigate("/admin");
       } else {
-        navigate("/");
+        navigate("/product");
       }
     } catch (error) {
       console.log(error);
