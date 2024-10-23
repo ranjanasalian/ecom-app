@@ -70,7 +70,9 @@ export default function ProductRoot() {
         <div className="product-list">
           {filteredProducts.map((product) => (
             <div key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} />
+              <Link to={`/product/${product.id}`}>
+                <img src={product.image} alt={product.name} />
+              </Link>
 
               <div className="add-to-cart">
                 <button>
